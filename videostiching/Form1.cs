@@ -45,7 +45,7 @@ namespace videostiching
                                 Bitmap bt = new Bitmap(result.Bitmap);
                                 bt.RotateFlip(RotateFlipType.RotateNoneFlipXY);
                                 pictureBox1.Image = bt;
-                                pictureBox1.Image.Save(@"C:\Users\lanun-surf\Desktop\stich.jpeg", ImageFormat.Jpeg);
+                               // pictureBox1.Image.Save(@"C:\Users\lanun-surf\Desktop\stich.jpeg", ImageFormat.Jpeg);
                             }
                             else
                             {
@@ -55,7 +55,7 @@ namespace videostiching
                         }
                     }
                 }
-                finally
+                catch(Exception ex)
                 {
                 }
             }
