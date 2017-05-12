@@ -53,6 +53,7 @@ namespace videostiching
         }
 
         /*Technically, warpPerspective do this on the coordinates of the Mat and move the pixel value(color) to a new pixel. perspectiveTransform, it just compute the new coordinate of the point and store it in the new vector.*/
+        //O ideal que seria escolher com clicks os cantos e cento do campo, para executar a perspetiva, não sei se será melhor abordagem
         private void wrapPrespectiveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PointF[] srcs = new PointF[4];
@@ -82,6 +83,17 @@ namespace videostiching
                 }
             }
         }
+
+        //private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        //{
+        //    Point controlRelative = pictureBox1.PointToClient(MousePosition);
+        //    Size imageSize = pictureBox1.Image.Size;
+        //    Size boxSize = pictureBox1.Size;
+        //    Point imagePosition = new Point((imageSize.Width / boxSize.Width) * controlRelative.X, (imageSize.Height / boxSize.Height) * controlRelative.Y);
+        //    myPoints.Add(new PointF(imagePosition.X, imagePosition.Y));
+
+        //    MessageBox.Show(string.Format("X: {0} Y: {1}", imagePosition.X, imagePosition.Y));
+        //}
 
         public void GetFrameFromVideos()
         {
