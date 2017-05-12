@@ -3,7 +3,6 @@ using Emgu.CV.Stitching;
 using Emgu.CV.Util;
 using System;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.Windows.Forms;
 
 namespace videostiching
