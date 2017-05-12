@@ -36,6 +36,7 @@
             this.openFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.stichFirstFrameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wrapPrespectiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -74,7 +75,8 @@
             // toolsToolStripMenuItem
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stichFirstFrameToolStripMenuItem});
+            this.stichFirstFrameToolStripMenuItem,
+            this.wrapPrespectiveToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(72, 34);
             this.toolsToolStripMenuItem.Text = "Tools";
@@ -101,6 +103,13 @@
             this.stichFirstFrameToolStripMenuItem.Size = new System.Drawing.Size(255, 34);
             this.stichFirstFrameToolStripMenuItem.Text = "Stich First Frame";
             this.stichFirstFrameToolStripMenuItem.Click += new System.EventHandler(this.stichFirstFrameToolStripMenuItem_Click);
+            // 
+            // wrapPrespectiveToolStripMenuItem
+            // 
+            this.wrapPrespectiveToolStripMenuItem.Name = "wrapPrespectiveToolStripMenuItem";
+            this.wrapPrespectiveToolStripMenuItem.Size = new System.Drawing.Size(265, 34);
+            this.wrapPrespectiveToolStripMenuItem.Text = "Wrap Prespective";
+            this.wrapPrespectiveToolStripMenuItem.Click += new System.EventHandler(this.wrapPrespectiveToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -130,6 +139,7 @@
         private System.Windows.Forms.ToolStripMenuItem openFilesToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ToolStripMenuItem stichFirstFrameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem wrapPrespectiveToolStripMenuItem;
     }
 }
 
